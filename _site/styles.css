@@ -63,12 +63,14 @@ figure figcaption {
 #all { width: 100%; float: left;}
 
 #linkedin {
-position:fixed;  
+position:absolute;  
 z-index:1;  
-top:100px;
+left:20px;  
+top:50px;
 }
 #github {
-position:fixed;  
+position:absolute;  
 z-index:2;  
-top:175px;  
+left:20px;  
+top:100px;  
 }
