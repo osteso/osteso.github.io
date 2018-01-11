@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+<meta name="date" content="2017-08-12" />
+
+<title>Oscillons</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="styles.css" type="text/css" />
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Stefano Orani</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">About me</a>
+</li>
+<li>
+  <a href="projects.html">Projects</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Oscillons</h1>
+<h4 class="date"><em>08/12/2017</em></h4>
+
+</div>
+
+
+<div style="width:500px;margin:0 auto;&gt; 
+  &lt;figure&gt;
+  &lt;img src=&quot;./media/movie.gif&quot;&gt;
+  &lt;figcaption style=&quot;font-size:120%;&quot;&gt;
+  &lt;i&gt;Oscillons moving around&lt;/i&gt;&lt;/figcaption&gt;
+  &lt;/figure&gt;
+&lt;/div&gt;
+  
+When working as a researcher in theoretical cosmology, I devoted an important part of time to the study of oscillons. They are bubbles of high-energy that may form shortly after cosmic inflation and are sursprisingly stable. In some theoretical models, they can even live long enough to become the dominant form of energy of the universe.  In most models, however, this is not the case. Studying the properties of oscillons, I found, together with my colleagues at the University of Basel, that they can produce copious amounts of gravitational waves. We published this result in [&lt;i&gt;Physical Review Letters&lt;/i&gt;](https://journals.aps.org/prl/about), one of the scientific journals with the highest impact factor. This led to quite a bit of publicity for our research and a [press-release](https://www.unibas.ch/en/News-Events/News/Uni-Research/Ancient-Signals-From-the-Early-Universe.html) on the university" s="" website.="" shortly="" after,="" articles="" on="" our="" research="" started="" appearing="" on="" news="" websites="" and="" i="" was="" contacted="" by="" a="" journalist="" at="" inaf,="" the="" italian="" national="" institute="" for="" astrophysics.="" we="" exchanged="" some="" emails="" and="" he="" wrote="" [this="" article="" (in="" italian)](http:="" www.media.inaf.it="" 2017="" 02="" 14="" la-firma-delle-onde-gravitazionali-primordiali="" ).="" since="" then,="" we="" continued="" our="" research="" on="" oscillons,="" confirming="" our="" results="" and="" extending="" them="" to="" cosmological="" models="" derived="" from="" string="" theory.="" plenty="" of="" questions="" remain="" on="" the="" impact="" of="" oscillons="" in="" the="" early="" universe="" but="" i="" would="" not="" be="" surprised="" if="" they="" actually="" existed="" and="" played="" an="" important="" role="" in="" the="" history="" of="" the="" universe.="" my="" experience="" as="" a="" researcher="" was="" that="" they="" were="" showing="" up="" in="" a="" very="" vast="" of="" theoretical="" models.="">
+<figure>
+<img src="media/movie.gif">
+<figcaption style="font-size:120%;">
+<i>Oscillons moving around</i>
+</figcaption>
+</figure>
+</div>
+<p>When working as a researcher in theoretical cosmology, I devoted an important part of time to the study of oscillons. They are bubbles of high-energy that may form shortly after cosmic inflation and are sursprisingly stable. In some theoretical models, they can even live long enough to become the dominant form of energy of the universe. In most models, however, this is not the case. Studying the properties of oscillons, I found, together with my colleagues at the University of Basel, that they can produce copious amounts of gravitational waves. We published this result in <a href="https://journals.aps.org/prl/about"><i>Physical Review Letters</i></a>, one of the scientific journals with the highest impact factor. This led to quite a bit of publicity for our research and a <a href="https://www.unibas.ch/en/News-Events/News/Uni-Research/Ancient-Signals-From-the-Early-Universe.html">press-release</a> on the university’s website. Shortly after, articles on our research started appearing on news websites and I was contacted by a journalist at INAF, the italian national institute for astrophysics. We exchanged some emails and he wrote <a href="http://www.media.inaf.it/2017/02/14/la-firma-delle-onde-gravitazionali-primordiali/">this article (in italian)</a>.<br />
+Since then, we continued our research on oscillons, confirming our results and extending them to cosmological models derived from string theory. Plenty of questions remain on the impact of oscillons in the early universe but I would not be surprised if they actually existed and played an important role in the history of the universe. My experience as a researcher was that they were showing up in a very vast class of theoretical models.</p>
+
+<p>Copyright &copy; Stefano Orani 2017, Inc. All rights reserved.</p>
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
