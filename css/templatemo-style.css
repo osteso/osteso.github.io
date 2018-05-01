@@ -334,7 +334,7 @@ h3.profile-title {
   font-size: 24px;
 }
 .main-navigation li a:hover {
-  background: #5b6878;
+  background: #5f6d7e;
 }
 .main-navigation li a.active {
   background: #495461;
@@ -414,7 +414,7 @@ h3.profile-title {
   display: block;
   padding: 20px;
   margin-top: 30px;
-  background: #6cc0f7;
+  background: #5f6d7e;
   color: white;
   font-size: 18px;
 }
